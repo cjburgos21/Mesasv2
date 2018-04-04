@@ -1,4 +1,3 @@
-
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -8,102 +7,156 @@
     android:orientation="vertical"
     tools:context="com.example.javier.ejemplo.MainActivity">
 
-    <RelativeLayout
-        android:id="@+id/Part1"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/door"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true">
+        android:text="Puerta"
+        android:background="@color/colorPrimary"
+        android:textColor="#000"
+        />
 
-        <TextView
-            android:id="@+id/door1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/view"
-            android:layout_toEndOf="@+id/view"
-            android:text="Puerta1"
-            android:textSize="10sp" />
-
-        <View
-            android:id="@+id/mesa1"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_alignParentTop="true"
-            android:layout_centerInParent="false"
-            android:layout_marginStart="22dp"
-            android:layout_toEndOf="@+id/door1"
-            android:background="@color/colorPrimaryDark" />
-
-        <LinearLayout
-            android:id="@+id/linearLayout"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_toLeftOf="@id/mesa1"
-            android:orientation="vertical">
-
-
-        </LinearLayout>
-
-
-        <View
-            android:id="@+id/view"
-            android:layout_width="5dp"
-            android:layout_height="50dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:background="@color/colorPrimaryDark" />
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:id="@+id/Part2"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/mesa1"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true">
+        android:text="mesa1"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:textColor="#000"
+        />
 
-        <TextView
-            android:id="@+id/door2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:layout_toStartOf="@+id/mesa2"
-            android:text="Puerta2"
-            android:textSize="10sp" />
+    <TextView
+        android:layout_above="@+id/mesa1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Douglas"
+        android:textColor="#000"
+        />
 
-        <LinearLayout
-            android:id="@+id/Linear"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_toLeftOf="@id/mesa2"
-            android:orientation="vertical">
-
-
-        </LinearLayout>
-
-
-        <View
-            android:id="@+id/vista1"
-            android:layout_width="5dp"
-            android:layout_height="50dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:background="@color/colorPrimaryDark" />
-
-        </RelativeLayout>
-
-    <View
+    <TextView
         android:id="@+id/mesa2"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/Part1"
-        android:layout_centerInParent="false"
-        android:layout_marginStart="124dp"
-        android:layout_marginTop="72dp"
-        android:background="@color/colorPrimaryDark" />
+        android:layout_below="@+id/door"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="mesa2"
+        android:layout_toRightOf="@id/door"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="40dp"
+        android:paddingLeft="15dp"
+        />
+
+    <TextView
+        android:id="@+id/Karla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Karla"
+        android:textColor="#000"
+        android:layout_below="@id/mesa2"
+        android:layout_marginLeft="25dp"
+        />
+
+    <TextView
+        android:id="@+id/sebastian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sebas"
+        android:textSize="15dp"
+        android:textColor="#000"
+        android:layout_below="@+id/mesa2"
+        android:layout_alignRight="@id/mesa2"
+
+        />
+
+    <TextView
+        android:id="@+id/hugo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hugo"
+        android:textColor="#000"
+        android:layout_toRightOf="@+id/mesa2"
+        android:layout_marginTop="60dp"
+        />
+
+    <TextView
+        android:id="@+id/mesa3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="mesa3"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        />
+
+
+    <TextView
+        android:id="@+id/Carlos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Carlos"
+        android:textColor="#000"
+        android:layout_above="@+id/mesa3"
+        android:layout_alignLeft="@id/mesa3"
+        />
+
+    <TextView
+        android:id="@+id/Obdulio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Obdulio"
+        android:textColor="#000"
+        android:layout_toLeftOf="@id/mesa3"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        />
+
+    <TextView
+        android:id="@+id/Sara"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sara"
+        android:textColor="#000"
+        android:layout_below="@id/Carlos"
+        android:layout_alignLeft="@id/mesa3"
+        android:layout_marginTop="20dp"
+        />
+
+
+
+    <TextView
+        android:id="@+id/mesa4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="mesa4"
+        android:background="@color/colorPrimary"
+        android:layout_centerInParent="true"
+        />
+
+
+    <TextView
+        android:id="@+id/Pedro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pedro"
+        android:textColor="#000"
+        android:layout_above="@+id/mesa4"
+        android:layout_alignLeft="@id/mesa4"
+        />
+
+
+    <TextView
+        android:id="@+id/Borrachos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Borrachos"
+        android:textColor="#000"
+        android:layout_below="@id/mesa4"
+        android:layout_alignLeft="@id/Pedro"
+        />
+
+
 </RelativeLayout>
-
-
